@@ -1,0 +1,10 @@
+#sidebar {
+    position:relative;
+    top:50px; bottom:0; left:50px;
+
+    background:#fff;
+}
+a:visited
+{
+color:#FF0000
+}

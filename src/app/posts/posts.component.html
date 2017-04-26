@@ -1,0 +1,54 @@
+
+<div class="container">
+
+<form  (ngSubmit)="onSubmit()" #listingsForm="ngForm">
+      <div class="form-group">
+        <h3 for="searchphrase">Search Attributes</h3>
+        <input type="text" class="form-control" id="searchphrase" required [(ngModel)]="model.searchphrase" name="searchphrase"
+               #searchphrase="ngModel">
+      </div>
+      <button type="submit" class="btn btn-success">Search</button>
+    </form>
+
+
+
+
+    <div >
+  <div class="row">
+      <p class="col-xs-4">Showing  <b> {{size}} </b> results  for <span style="background-color: #FFFF00">{{ model.searchphrase }} </span></p>
+  </div>
+  <br>
+</div>
+  <div class="row" *ngFor="let post of posts">
+    <div class="card card-block">
+      <a href="{{post.url}}" target="_blank" class="card-title">{{ post.title }}</a>
+       <p class="card-text">Date Posted: {{post.date}}</p>
+       <p class="card-text">Price : {{post.price}}</p>
+       <p class="card-text">Location: {{post.location}}</p>
+
+    </div>
+
+
+  </div>
+#           <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+#                 <li [ngClass]="{disabled:pager.currentPage === 1}">
+#                     <button (click)="setPage(1)">First</button>
+#                 </li>
+#                 <li [ngClass]="{disabled:pager.currentPage === 1}">
+#                     <button (click)="setPage(pager.currentPage - 1)">Previous</button>
+#                 </li>
+#                 <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+#                     <a (click)="setPage(page)">{{page}}</a>
+#                 </li>
+#                 <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+#                     <button (click)="setPage(pager.currentPage + 1)">Next</button>
+#                 </li>
+#                 <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+#                     <button (click)="setPage(pager.totalPages)">Last</button>
+#                 </li>
+#             </ul>
+</div>
+
+
+
+
