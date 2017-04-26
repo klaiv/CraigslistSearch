@@ -1,28 +1,35 @@
-# Craigslist
+# Craigslist Data Aggregate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project returns search results aggregated from all US craigslist sites [https://www.craigslist.org/about/sites#US](cities)
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Clone repository 
+cd [repository]
+run ng build && node server.js
+Navigate to 'http://localhost:300/'
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+have latest versions of node/npm and @angular/cli installed on machine
+Uses Angular 2 and NodeJS directives
+Check all app dependencies in package.json.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Contributing
 
-## Running unit tests
+Feel free to suggest any edits (pull requests)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+@Clive Mudandas
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Motivation: node-craiglist npm package
+
