@@ -2,6 +2,10 @@
 
 This project returns search results aggregated from all US craigslist sites [https://www.craigslist.org/about/sites#US](cities)
 
+**WARNING**
+
+If you use this, abide by craigslist terms of service to avoid being flagged
+
 ## Getting Started
 
 Clone repository 
@@ -23,7 +27,7 @@ Feel free to suggest any edits (pull requests)
 
 ## Author
 
-@Clive Mudandas
+@Clive Mudanda
 
 ## License
 
