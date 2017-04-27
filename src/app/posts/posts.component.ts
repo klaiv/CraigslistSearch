@@ -17,11 +17,12 @@ export class PostsComponent {
     // pager object
   pager: any = {};
   posts: any = [];
+  states: any = [];
   size: any = 0;
 
   constructor(private postsService: PostsService, private pagerService: PagerService) { }
 
-  model = new Listings('antique');
+  model = new Listings('saxophone');
 
   submitted = false;
 
@@ -30,25 +31,14 @@ export class PostsComponent {
        this.allItems = posts;
        this.posts = posts;
 
+
                 // initialize to page 1
       //this.setPage(1);
       this.size = posts.length;
     });
   this.submitted = true; }
 
-  ngOnInit() {
-    // Retrieve posts from the API
 
-    //send in the search params
-    this.postsService.getAllPosts(this.model.searchphrase).subscribe(posts => {
-       this.allItems = posts;
-       this.posts = posts;
-
-                // initialize to page 1
-     // this.setPage(1);
-      this.size = posts.length;
-    });
-  }
   setPage(page: number) {
         if (page < 1 || page > this.pager.totalPages) {
             return;

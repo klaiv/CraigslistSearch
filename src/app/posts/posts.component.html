@@ -21,10 +21,8 @@
 </div>
   <div class="row" *ngFor="let post of posts">
     <div class="card card-block">
-      <a href="{{post.url}}" target="_blank" class="card-title">{{ post.title }}</a>
-       <p class="card-text">Date Posted: {{post.date}}</p>
-       <p class="card-text">Price : {{post.price}}</p>
-       <p class="card-text">Location: {{post.location}}</p>
+    <a href="{{post.url}}" target="_blank" class="card-title">{{ post.title }}</a> <b> {{post.price}}</b>, {{post.date}}, {{post.city}}
+
 
     </div>
 
