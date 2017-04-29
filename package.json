@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node server.js",
+    "start": "npm install && ng build && node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -29,6 +29,7 @@
     "json-concat": "0.0.1",
     "jsonfile": "^3.0.0",
     "merge": "^1.2.0",
+    "node-craigslist": "^1.1.1",
     "rxjs": "^5.1.0",
     "underscore": "^1.8.3",
     "zone.js": "^0.8.4"
