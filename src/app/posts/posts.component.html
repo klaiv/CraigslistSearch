@@ -4,7 +4,7 @@
 <form  (ngSubmit)="onSubmit()" #listingsForm="ngForm">
       <div class="form-group">
         <h3 for="searchphrase">Search Attributes</h3>
-        <input type="text" class="form-control" id="searchphrase" required [(ngModel)]="model.searchphrase" name="searchphrase"
+        <input ng-keyup="$event.keyCode == 13 && onSubmit()" type="text" class="form-control" id="searchphrase" placeholder="Type in search phrase and press Search button" (ngEnter)= "onSubmit()" required [(ngModel)]="model.searchphrase" name="searchphrase"
                #searchphrase="ngModel">
       </div>
       <button type="submit" class="btn btn-success">Search</button>

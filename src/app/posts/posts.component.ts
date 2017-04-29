@@ -22,7 +22,7 @@ export class PostsComponent {
 
   constructor(private postsService: PostsService, private pagerService: PagerService) { }
 
-  model = new Listings('saxophone');
+  model = new Listings('buescher saxophone');
 
   submitted = false;
 
@@ -37,7 +37,6 @@ export class PostsComponent {
       this.size = posts.length;
     });
   this.submitted = true; }
-
 
   setPage(page: number) {
         if (page < 1 || page > this.pager.totalPages) {
