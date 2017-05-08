@@ -6,12 +6,9 @@ import 'rxjs/add/operator/map';
 export class PostsService {
 
   constructor(private http: Http) { }
-
-  // Get all posts from the API
   getAllPosts(keyword) {
   var key = keyword;
   var url = '/api/posts?&keyword=' + key;
-
     return this.http.get(url)
       .map(res => res.json());
   }
