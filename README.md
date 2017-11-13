@@ -2,6 +2,8 @@
 
 This project returns search results aggregated from all US craigslist sites [https://www.craigslist.org/about/sites#US](cities)
 
+Nothing fancy here - Just do your nationwide craigslist search on one page instead of individual seperate sites
+
 **WARNING**
 
 If you use this, abide by craigslist terms of service to avoid being flagged
@@ -19,10 +21,6 @@ have latest versions of node/npm and @angular/cli installed on machine
 Uses Angular 2 and NodeJS directives
 Check all app dependencies in package.json.
 
-
-## Contributing
-
-Feel free to suggest any edits (pull requests)
 
 
 ## Author
